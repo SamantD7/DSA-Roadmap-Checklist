@@ -2,8 +2,6 @@
 
 A sleek, interactive, and fully offline-friendly Data Structures & Algorithms (DSA) study planner and progress tracker.
 
-![screenshot](https://user-images.githubusercontent.com/68494316/230771017-1f40bbb0-66b5-4ca8-88a8-1e820613d41b9.png)
-
 ---
 
 ## Features
