@@ -1,8 +1,10 @@
 # DSA Roadmap Checklist
 
-A sleek, interactive, and fully offline-friendly Data Structures & Algorithms (DSA) study planner and progress tracker.
+A personal roadmap checklist for mastering Data Structures and Algorithms (DSA).
 
----
+## About
+
+This project was originally created to help me organize and track my progress with DSA concepts and problems. However, it can be equally useful for other students and learners aiming to strengthen their understanding of Data Structures and Algorithms.
 
 ## Features
 
@@ -19,20 +21,32 @@ A sleek, interactive, and fully offline-friendly Data Structures & Algorithms (D
 - **Offline Ready:** Works completely offline—perfect for focused study.
 - **Lightweight:** Only a single self-contained HTML file (no external JS, only loads fonts).
 
----
 
-## Usage
-
-1. **Open the app:**  
-   Just open [`dsa_roadmap_checklist.html`](dsa_roadmap_checklist.html) in your web browser.
-
-2. **Track your progress:**  
-   Check off subtopics, add notes, attach LC problems, and set a target date to pace your prep.
-
-3. **Add custom content:**  
    Use the "+ Add Topic/Subtopic" buttons to expand or customize your roadmap.
 
 4. **Data privacy:**  
    Everything is stored _locally_ in your browser (`localStorage`). Nothing leaves your device.
 
 ---
+
+## Who is this for?
+
+- Anyone preparing for coding interviews, competitive programming, or computer science exams.
+- Students who want a systematic way to cover essential DSA topics.
+- Self-learners who want to monitor their progress.
+
+## How to use
+
+- Fork or download the repository.
+- Go through the topics and check them off as you learn and practice.
+- Update the checklist as necessary to fit your learning needs.
+
+## Contributions
+
+Feel free to suggest improvements or add new topics! This resource is meant to help not only me but the whole student community.
+
+---
+
+**Happy Coding!**
+
+
