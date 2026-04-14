@@ -243,9 +243,6 @@ header p { margin-top: 8px; color: var(--muted); font-family: 'JetBrains Mono', 
 .modal-cancel { background: transparent; border: 1px solid var(--border); color: var(--muted); }
 .modal-cancel:hover { color: var(--text); border-color: var(--muted); }
 
-/* ── LOGO ── */
-
-
 /* ── GITHUB BADGE ── */
 .gh-badge {
   position: fixed;
@@ -352,7 +349,8 @@ const DEFAULT_DATA = [
     { id:"t5", name:"Prefix Sum & Difference Arrays", subs:["1D prefix sum — range sum queries in O(1) after O(n) build","2D prefix sum — submatrix sum queries in O(1)","Difference array — range update in O(1), reconstruct in O(n)","Prefix XOR — subarray XOR queries","Count of subarrays with given sum — prefix sum + hashmap trick"]},
     { id:"t6", name:"Bit Manipulation", subs:["Binary representation — how integers are stored in binary, signed vs unsigned","Basic bitwise operators — AND, OR, XOR, NOT and their truth tables","Left & right shift — multiplying/dividing by powers of 2 using shifts","Set, clear, toggle a bit — standard mask operations on individual bits","Check if bit is set — using n & (1 << i) to read a specific bit position","Power of 2 check — n & (n-1) == 0 trick to check in O(1)","Count set bits (Hamming weight) — Brian Kernighan's algorithm, built-in __builtin_popcount","XOR properties — a^a=0, a^0=a, used for finding unique elements","Bit masking for subsets — representing and iterating all subsets of a set using bits","Two's complement — how negative numbers work in binary, why -n = ~n + 1"]},
     { id:"t7", name:"Sorting", subs:["Bubble, Selection, Insertion — O(n²) sorts, when they're useful (nearly sorted input)","Merge Sort — divide & conquer, stable, O(n log n), basis for inversion count","Quick Sort — pivot partitioning, average O(n log n), worst O(n²), in-place","Counting Sort — O(n+k) for bounded integers","Radix Sort — sort digit by digit for large integers","Custom comparators — sorting by second element, structs, lambda functions","Inversion count — modified merge sort to count pairs where arr[i] > arr[j], i < j"]},
-    { id:"t8", name:"Binary Search", subs:["Classic binary search — searching in sorted array, lo/hi/mid logic","Lower bound / Upper bound — first occurrence, last occurrence, count","Binary search on answer — when answer has monotone property (search space is a range, not array)","Rotated sorted array — finding pivot, searching in rotated arrays","Binary search on floats — for problems needing precision answers","2D binary search — searching in row-wise/col-wise sorted matrix"]}
+    { id:"t8", name:"Binary Search", subs:["Classic binary search — searching in sorted array, lo/hi/mid logic","Lower bound / Upper bound — first occurrence, last occurrence, count","Binary search on answer — when answer has monotone property (search space is a range, not array)","Rotated sorted array — finding pivot, searching in rotated arrays","Binary search on floats — for problems needing precision answers","2D binary search — searching in row-wise/col-wise sorted matrix"]},
+    { id:"t8_ls", name:"Line Sweep", subs:["Sweep line concept — imaginary vertical line moves left to right across events, processing them in sorted order","Event-based sorting — convert geometry/interval problems into discrete events sorted by x-coordinate or value","Interval overlap detection — use sweep to find if any two intervals overlap in O(n log n)","Meeting rooms pattern — count maximum simultaneous overlapping intervals using start/end events","Area of union of rectangles — sweep vertical line, track active y-intervals to compute covered area","Skyline problem — process building edges as events, use max-heap or multiset to track current height","Coordinate compression — compress sparse coordinates to dense indices before sweeping","Difference array + sweep — apply range updates as +1/-1 events, sweep to reconstruct values"]}
   ]},
   { phase:"PHASE 2", title:"Core Data Structures", color:"#ffa94d", topics:[
     { id:"t9", name:"Linked List", subs:["Singly linked list — node structure, traversal, insertion, deletion","Doubly linked list — prev pointer, O(1) deletion given node reference","Circular linked list — no null tail, use in round-robin scheduling","Floyd's Cycle Detection — slow/fast pointer to detect and find cycle start","Reversal — iterative and recursive reversal of full/partial list","Merge two sorted lists — pointer manipulation without extra space","Dummy node trick — simplifies edge cases at head during insertion/deletion"]},
@@ -813,7 +811,6 @@ function render(){
 render();
 </script>
 
-<!-- GitHub Badge -->
 <style>
 #gh-badge {
   position: fixed;
